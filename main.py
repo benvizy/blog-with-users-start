@@ -86,7 +86,7 @@ class Comment(db.Model):
     commenter = relationship("User", back_populates="comments")
 
 
-# db.create_all()
+db.create_all()
 
 @app.route('/')
 def get_all_posts():
